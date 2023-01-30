@@ -19,8 +19,8 @@
 /* Colors */
 :root {
   --color-default: #fafafa;
-  --color-primary: #27a776;
-  --color-secondary: #161718;
+  --color-primary: #315bcf;
+  --color-secondary: #050505;
 }
 
 /* Smooth scroll behavior */
@@ -34,7 +34,7 @@
 body {
   font-family: var(--font-default);
   color: var(--color-default);
-  background-color: #000;
+  background-image: linear-gradient(45deg, rgb(0, 0, 0), rgba(1, 128, 111, 0.663), rgb(2, 6, 93),  rgb(120, 4, 4), rgb(0, 0, 0));
 }
 
 a {
@@ -43,7 +43,7 @@ a {
 }
 
 a:hover {
-  color: #32cf93;
+  color: #0ae7bb;
   text-decoration: none;
 }
 
@@ -80,7 +80,7 @@ h6 {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #5bd9a9;
+  background: #024e31;
   margin: 4px 10px;
 }
 
@@ -90,7 +90,7 @@ h6 {
   font-size: 36px;
   font-weight: 700;
   font-family: var(--font-secondary);
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 /*--------------------------------------------------------------
@@ -191,7 +191,7 @@ h6 {
   inset: 0;
   width: 50%;
   height: 100%;
-  transition: all 0.3s ease 0s;
+  transition: all 0.1s ease 0s;
   z-index: -1;
 }
 
@@ -206,16 +206,16 @@ h6 {
   margin: auto;
   width: 1px;
   height: 280px;
-  transition: all 0.8s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 #preloader .line:before {
   content: "";
   position: absolute;
-  background-color: #fff;
+  background-color: rgb(255, 5, 255);
   left: 0;
   top: 50%;
-  width: 1px;
+  width: 6px;
   height: 0%;
   transform: translateY(-50%);
   -webkit-animation: lineincrease 1000ms ease-in-out 0s forwards;
@@ -319,11 +319,11 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 30px 0;
-  background-color: #000;
+  background-color: rgba(4, 2, 44, 0.858);
 }
 
 .header .logo {
-  transition: 0.3s;
+  transition: 0.01s;
 }
 
 .header .logo img {
@@ -334,8 +334,8 @@ h6 {
 .header .logo h1 {
   font-size: 32px;
   margin: 0;
-  font-weight: 400;
-  color: #fff;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
   font-family: var(--font-secondary);
 }
 
@@ -347,11 +347,11 @@ h6 {
 
 @media (max-width: 575px) {
   .header .logo h1 {
-    font-size: 26px;
+    font-size: 36px;
   }
 
   .header .logo i {
-    font-size: 24px;
+    font-size: 36px;
   }
 }
 
@@ -360,16 +360,16 @@ h6 {
 }
 
 .header .header-social-links a {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(110, 149, 190, 0.99);
   padding-left: 15px;
   display: inline-block;
   line-height: 0px;
   transition: 0.3s;
-  font-size: 16px;
+  font-size: 21px;
 }
 
 .header .header-social-links a:hover {
-  color: #fff;
+  color: rgb(129, 247, 153);
 }
 
 @media (max-width: 575px) {
@@ -407,9 +407,9 @@ h6 {
     font-family: var(--font-primary);
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 13px;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.988);
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -425,7 +425,7 @@ h6 {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: rgb(207, 36, 36);
   }
 
   .navbar .dropdown ul {
@@ -461,7 +461,7 @@ h6 {
   .navbar .dropdown ul a:hover,
   .navbar .dropdown ul .active:hover,
   .navbar .dropdown ul li:hover>a {
-    color: #fff;
+    color: rgb(137, 26, 120);
   }
 
   .navbar .dropdown:hover>ul {
@@ -522,7 +522,7 @@ h6 {
     inset: 0;
     padding: 50px 0 10px 0;
     margin: 0;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(13, 0, 26, 0.9);
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -538,7 +538,7 @@ h6 {
     font-size: 13px;
     text-transform: uppercase;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 119, 0, 0.999);
     letter-spacing: 1px;
     white-space: nowrap;
     transition: 0.3s;
@@ -555,7 +555,7 @@ h6 {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: rgb(255, 255, 255);
   }
 
   .navbar .dropdown ul,
@@ -574,7 +574,7 @@ h6 {
   }
 
   .mobile-nav-show {
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 28px;
     cursor: pointer;
     line-height: 0;
