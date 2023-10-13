@@ -7,5 +7,5 @@
 
 ```bash
 git config --global user.name "Jesus Antonio Mendoza Tovar"
-git config --global user.email "mo_si_mo@hotmail.com"
+git config --global user.email "momo@hotmail.com"
 ```

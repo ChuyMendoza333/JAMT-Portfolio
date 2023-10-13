@@ -418,15 +418,21 @@ h6 {
   .navbar a:focus i {
     font-size: 12px;
     line-height: 0;
-    margin-left: 5px;
+    text-align: center;
+    align-items: center;
   }
 
   .navbar a:hover,
   .navbar .active,
   .navbar .active:focus,
-  .navbar li:hover>a {
+  .navbar {
     color: rgb(207, 36, 36);
   }
+  li:hover>a {
+    color: rgb(207, 36, 36);
+    text-align: center;
+  }
+
 
   .navbar .dropdown ul {
     display: block;
@@ -1220,10 +1226,18 @@ h6 {
 .hero {
   width: 100%;
   min-height: 30vh;
-  background: #000;
+  background: #050505;
   background-size: cover;
   position: relative;
   padding: 140px 0 60px 0;
+}
+#s_hero {
+  width: 100%;
+  min-height: 20vh;
+  background-color: #161515;
+  background-size: cover;
+  position: relative;
+  padding: 0px;
 }
 
 .hero h2 {
@@ -1267,7 +1281,10 @@ h6 {
   border-radius: 4px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  transition: 0.3s;
+  text-align: center;
+  align-items: center;
+  padding: 0% 5% 0% 5%;
+  transition: 0.1s;
   color: #fff;
   background: var(--color-primary);
 }
