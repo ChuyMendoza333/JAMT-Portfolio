@@ -15,10 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('load', () => {
       setTimeout(() => {
         preloader.classList.add('loaded');
-      }, 100);
+      }, 500);
       setTimeout(() => {
         preloader.remove();
-      }, 100);
+      }, 2500);
     });
   }
 
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   function aos_init() {
     AOS.init({
-      duration: 500,
+      duration: 1500,
       easing: 'ease-in-out',
       once: true,
       mirror: false

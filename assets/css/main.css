@@ -204,18 +204,18 @@ h6 {
   position: relative;
   overflow: hidden;
   margin: auto;
-  width: 1px;
+  width: 9px; 
   height: 280px;
-  transition: all 0.3s ease 0s;
+  transition: all 0.6s ease 0s;
 }
 
 #preloader .line:before {
   content: "";
   position: absolute;
-  background-color: rgb(255, 5, 255);
+  background-color: rgb(255, 5, 205);
   left: 0;
   top: 50%;
-  width: 6px;
+  width: 15px;
   height: 0%;
   transform: translateY(-50%);
   -webkit-animation: lineincrease 1000ms ease-in-out 0s forwards;
