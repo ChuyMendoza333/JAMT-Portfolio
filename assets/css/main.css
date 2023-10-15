@@ -382,6 +382,8 @@ h6 {
 
 .header .header-social-links a:hover {
   color: rgb(129, 247, 153);
+  transform: scale(1.2);
+  transition: 0.5s;
 }
 
 @media (max-width: 575px) {
@@ -443,6 +445,8 @@ h6 {
   li:hover>a {
     color: rgb(207, 36, 36);
     text-align: center;
+    transform: scale(1.2);
+    transition: 0.5s;
   }
 
 
@@ -680,6 +684,33 @@ h6 {
   transition: 0.3s;
 }
 
+.testimonials .testimonial-item_p {
+  box-sizing: content-box;
+  padding: 30px;
+  margin: 40px 30px;
+  border-radius: 15%;
+  background-color: rgba(0, 0, 0, 0.75);
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.testimonials .testimonial-item_p .img-fluid {
+  border-radius: 9%;
+  border: 5px solid #35d515;
+  margin: 0 auto;
+}
+
+.testimonials .testimonial-item_p .img-fluid:hover {
+  border-radius: 5%;
+  border: 5px solid #35d515;
+  margin: 0 auto;
+  transform: scale(1.2) rotate(360deg);
+  transition: 0.3s;
+}
+
 .testimonials .testimonial-item .stars {
   margin-bottom: 15px;
 }
@@ -777,7 +808,7 @@ h6 {
   inset: 0;
   opacity: 0;
   transition: all ease-in-out 0.3s;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.45);
   z-index: 3;
 }
 
@@ -820,6 +851,25 @@ h6 {
 .glightbox-clean .gslide-title {
   color: rgba(255, 255, 255, 0.8);
   margin: 0;
+}
+.testimonial-item_p .details-link,
+.testimonial-item_p .preview-link  {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(9, 225, 31, 0.5);
+  transition: 0.3s;
+  line-height: 1.2;
+  margin: 30px 8px 0 8px;
+  background-color: #007acc;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.testimonial-item_p .details-link:hover,
+.testimonial-item_p .preview-link:hover {
+  color: #fff;
+  background-color: #00cc4b;
+  transform: scale(1.5);
 }
 
 /*--------------------------------------------------------------
@@ -1241,7 +1291,7 @@ h6 {
   color: #fff;
   padding: 140px 0 60px 0;
   min-height: 30vh; /* Color de fondo de respaldo */
-  background-image: url('JAMT-Portfolio//assets//img//gallery//Covers\cover.jpg'); /* Ruta a tu imagen de fondo */
+  background-image: url('JAMT-Portfolio//assets//img//gallery//Covers//cover.jpg'); /* Ruta a tu imagen de fondo */
   background-size: cover;   
 }
 
