@@ -15,10 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('load', () => {
       setTimeout(() => {
         preloader.classList.add('loaded');
-      }, 500);
+      }, 300);
       setTimeout(() => {
         preloader.remove();
-      }, 2500);
+      }, 1000);
     });
   }
 
