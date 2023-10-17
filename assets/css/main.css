@@ -22,7 +22,6 @@
   --color-primary: #315bcf;
   --color-secondary: #050505;
 }
-
 /* Smooth scroll behavior */
 :root {
   scroll-behavior: smooth;
