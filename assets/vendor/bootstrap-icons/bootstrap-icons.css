@@ -900,7 +900,7 @@ url("./fonts/bootstrap-icons.woff?24e3eb84d0bcaf83d77f904c78ac1f47") format("wof
 .bi-lightning-charge::before { content: "\f46d"; }
 .bi-lightning-fill::before { content: "\f46e"; }
 .bi-lightning::before { content: "\f46f"; }
-.bi-link-45deg::before { content: "\f470"; }
+.bi-globe::before { content: "\f470"; }
 .bi-link::before { content: "\f471"; }
 .bi-linkedin::before { content: "\f472"; }
 .bi-list-check::before { content: "\f473"; }

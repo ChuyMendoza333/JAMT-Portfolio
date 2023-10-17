@@ -21,6 +21,7 @@
   --color-default: #fafafa;
   --color-primary: #315bcf;
   --color-secondary: #050505;
+  --title: 'My DS Projects'
 }
 /* Smooth scroll behavior */
 :root {
