@@ -10,6 +10,7 @@
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
 /* Fonts */
+
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Inter", sans-serif;
@@ -34,9 +35,6 @@
 body {
   font-family: var(--font-default);
   color: var(--color-default);
-  background-image: linear-gradient(45deg, rgb(0, 0, 0), rgba(1, 128, 111, 0.663), rgb(2, 6, 93),  rgb(120, 4, 4), rgb(0, 0, 0));
-  /* background-image: linear-gradient(135deg, #000000, #0b20bc,#0ba8d4,#0bd47d, #eef600, #aa6b06, #000000); */
-  /* background-image: linear-gradient(135deg, #000000,#000000, #f5f900,#ed0814,#7d0bd4, #1406aa, #0000f6); */
 }
 
 body::-webkit-scrollbar-thumb {
@@ -68,120 +66,6 @@ h6 {
   font-family: var(--font-primary);
 }
 
-/*--------------------------------------------------------------
-# Sections & Section Header
---------------------------------------------------------------*/
-.section-header {
-  padding-bottom: 40px;
-}
-
-.section-header h2 {
-  font-size: 14px;
-  font-weight: 500;
-  padding: 0;
-  line-height: 1px;
-  margin: 0 0 5px 0;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.6);
-  font-family: var(--font-primary);
-}
-
-.section-header h2::after {
-  content: "";
-  width: 120px;
-  height: 1px;
-  display: inline-block;
-  background: #024e31;
-  margin: 4px 10px;
-}
-
-.section-header p {
-  margin: 0;
-  margin: 0;
-  font-size: 36px;
-  font-weight: 700;
-  font-family: var(--font-secondary);
-  color: rgb(255, 255, 255);
-}
-
-/*--------------------------------------------------------------
-# Page Header
---------------------------------------------------------------*/
-.page-header {
-  padding: 120px 0 60px 0;
-  min-height: 30vh;
-  position: relative;
-}
-
-.page-header h2 {
-  font-size: 56px;
-  font-weight: 500;
-  color: #fff;
-  font-family: var(--font-secondary);
-}
-
-@media (max-width: 768px) {
-  .page-header h2 {
-    font-size: 36px;
-  }
-}
-
-.page-header p {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.page-header .cta-btn {
-  font-family: var(--font-primary);
-  font-weight: 400;
-  font-size: 14px;
-  display: inline-block;
-  padding: 12px 40px;
-  border-radius: 4px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: 0.3s;
-  color: #fff;
-  background: var(--color-primary);
-}
-
-.page-header .cta-btn:hover {
-  background: #2cbc85;
-}
-
-/*--------------------------------------------------------------
-# Scroll top button
---------------------------------------------------------------*/
-.scroll-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: -15px;
-  z-index: 99999;
-  background: var(--color-primary);
-  width: 44px;
-  height: 44px;
-  border-radius: 50px;
-  transition: all 0.4s;
-}
-
-.scroll-top i {
-  font-size: 24px;
-  color: #fff;
-  line-height: 0;
-}
-
-.scroll-top:hover {
-  background: rgba(39, 167, 118, 0.8);
-  color: #fff;
-}
-
-.scroll-top.active {
-  visibility: visible;
-  opacity: 1;
-  bottom: 15px;
-}
 
 /*--------------------------------------------------------------
 # Preloader
@@ -324,67 +208,8 @@ h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
-.header {
-  transition: all 0.5s;
-  z-index: 997;
-  padding: 30px 0;
-  background-color: rgba(4, 2, 44, 0.858);
-}
 
-.header .logo {
-  transition: 0.01s;
-}
 
-.header .logo img {
-  max-height: 40px;
-  margin-right: 8px;
-}
-
-.header .logo h1 {
-  font-size: 32px;
-  margin: 0;
-  font-weight: 700;
-  color: rgb(255, 255, 255);
-  font-family: var(--font-secondary);
-}
-
-.header .logo i {
-  font-size: 32px;
-  margin-right: 8px;
-  line-height: 0;
-}
-
-@media (max-width: 575px) {
-  .header .logo h1 {
-    font-size: 36px;
-  }
-
-  .header .logo i {
-    font-size: 36px;
-  }
-}
-
-.header .header-social-links {
-  padding-right: 15px;
-}
-
-.header .header-social-links a {
-  color: rgba(110, 149, 190, 0.99);
-  padding-left: 15px;
-  display: inline-block;
-  line-height: 0px;
-  transition: 0.3s;
-  font-size: 21px;
-}
-
-.header .header-social-links a:hover {
-  color: rgb(129, 247, 153);
-  transform: scale(1.2);
-  transition: 0.5s;
-}
 
 @media (max-width: 575px) {
   .header .header-social-links a {
@@ -486,92 +311,7 @@ h6 {
     color: rgb(137, 26, 120);
   }
 
-  .navbar .dropdown:hover>ul {
-    opacity: 1;
-    top: 100%;
-    visibility: visible;
-  }
-
-  .navbar .dropdown .dropdown ul {
-    top: 0;
-    left: calc(100% - 30px);
-    visibility: hidden;
-  }
-
-  .navbar .dropdown .dropdown:hover>ul {
-    opacity: 1;
-    top: 0;
-    left: 100%;
-    visibility: visible;
-  }
-}
-
-@media (min-width: 1280px) and (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
-    left: -90%;
-  }
-
-  .navbar .dropdown .dropdown:hover>ul {
-    left: -100%;
-  }
-}
-
-@media (min-width: 1280px) {
-
-  .mobile-nav-show,
-  .mobile-nav-hide {
-    display: none;
-  }
-}
-
-/*--------------------------------------------------------------
-# Mobile Navigation
---------------------------------------------------------------*/
-@media (max-width: 1279px) {
-  .navbar {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 100%;
-    max-width: 400px;
-    bottom: 0;
-    transition: 0.3s;
-    z-index: 9997;
-  }
-
-  .navbar ul {
-    position: absolute;
-    inset: 0;
-    padding: 50px 0 10px 0;
-    margin: 0;
-    background: rgba(13, 0, 26, 0.9);
-    overflow-y: auto;
-    transition: 0.3s;
-    z-index: 9998;
-  }
-
-  .navbar a,
-  .navbar a:focus {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    font-family: var(--font-primary);
-    font-size: 13px;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: rgba(255, 119, 0, 0.999);
-    letter-spacing: 1px;
-    white-space: nowrap;
-    transition: 0.3s;
-  }
-
-  .navbar a i,
-  .navbar a:focus i {
-    font-size: 12px;
-    line-height: 0;
-    margin-left: 5px;
-  }
+  
 
   .navbar a:hover,
   .navbar .active,
