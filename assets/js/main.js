@@ -186,12 +186,12 @@
 // const preloader = document.querySelector('#preloader');
 // const currentURL = window.location.href;
 // if (currentURL.includes("JAMT"))
-  /**
-   * Hide mobile nav on same-page/hash links
-   */
-  const currentURL = window.location.href;
-  if (currentURL.includes("JAMT")) {
- 
+/**
+ * Hide mobile nav on same-page/hash links
+ */
+const currentURL = window.location.href;
+if (currentURL.includes("JAMT")) {
+
   document.addEventListener('DOMContentLoaded', () => {
     "use strict";
 

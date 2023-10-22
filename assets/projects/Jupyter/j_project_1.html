@@ -78,7 +78,7 @@
         }
 /*Presentation Height*/
         .presentation {
-            /* height: 36209px; */
+            height: 33000px;
         }
         .credits {
             margin: 0 0 0 0 !important;
@@ -199,29 +199,7 @@
         <div class="line"></div>
     </div>
     <script src="/JAMT-Portfolio/assets/js/main.js"></script>
-    <script>
-        function adjustPresentationHeight() {
-            const iframe = document.getElementById('page_content');
-            if (iframe) {
-                // Obtén la altura del contenido del iframe
-                const contentHeight = iframe.contentWindow.document.documentElement.scrollHeight;
-                // Establece la altura de la <div class="presentation"> según la altura del contenido del iframe
-                const presentation = document.querySelector('.presentation');
-                if (presentation) {
-                    presentation.style.height = contentHeight + 'px';
-                }
-            }
-        }
     
-        // Asegúrate de ajustar la altura una vez que el contenido del iframe se haya cargado completamente
-        const iframe = document.getElementById('page_content');
-        if (iframe) {
-            iframe.onload = adjustPresentationHeight;
-        }
-    
-        // También puedes ajustar la altura cuando la ventana cambia de tamaño
-        window.addEventListener('resize', adjustPresentationHeight);
-    </script>
 
 </body>
 

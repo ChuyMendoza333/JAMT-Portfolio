@@ -168,6 +168,7 @@ h6 {
   align-items: center;
   justify-content: center;
   overflow: auto;
+  overflow-y: hidden;
 }
 
 .presentation iframe {
