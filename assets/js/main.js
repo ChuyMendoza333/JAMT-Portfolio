@@ -362,10 +362,10 @@
     });
   }
 
-  if (currentURL.includes("/JAMT-Portfoio")) {
+  if (currentURL.includes("/JAMT-Portfolio")) {
     const link = document.createElement("link");
     link.rel = "stylesheet";
-    link.href = "assets/scss/http/main.css";
+    link.href = "/JAMT-Portfolio/assets/scss/http/main.css";
     document.head.appendChild(link);
   }
 }
