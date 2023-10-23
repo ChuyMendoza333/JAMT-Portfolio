@@ -368,4 +368,66 @@ if (currentURL.includes("JAMT")) {
     link.href = "/JAMT-Portfolio/assets/scss/http/main.css";
     document.head.appendChild(link);
   }
+
 }
+{
+const currentURL = window.location.href;
+const j_projects = [
+  { name: "Netflix Null Values", url: "/JAMT-Portfolio/assets/projects/Jupyter/j_project_1.html" },
+  { name: "Netflix Titles", url: "/JAMT-Portfolio/assets/projects/Jupyter/j_project_2.html" },
+  // Add more projects here
+];
+
+// Function to generate the project links for "j_project"
+function generateJProjectLinks() {
+  const j_projectMenu = document.getElementById("j-project-menu");
+  j_projects.forEach(project => {
+    if (!currentURL.includes(project.url)) {
+      const j_link = document.createElement("a");
+      const icon = document.createElement("i");
+      const projectName = document.createTextNode(" " + project.name);
+      icon.classList.add("bi", "bi-file-earmark-text-fill");
+      j_link.href = project.url;
+      j_link.appendChild(icon);
+      j_link.appendChild(projectName);
+      j_projectMenu.appendChild(j_link);
+    }
+  });
+}
+}
+{
+const currentURL = window.location.href;
+const db_projects = [
+  { name: "Netflix Dashboard", url: "/JAMT-Portfolio/assets/projects/Databricks/db_project_1.html" },
+  { name: "Netflix Null Values Dashboard", url: "/JAMT-Portfolio/assets/projects/Databricks/db_project_2.html" },
+  { name: "Bank Analysis Dashboard", url: "/JAMT-Portfolio/assets/projects/Databricks/db_project_3.html" },
+  { name: "Medical Analysis Dashboard", url: "/JAMT-Portfolio/assets/projects/Databricks/db_project_4.html" },
+  // Add more projects here
+];
+// Function to generate the project links for "db_project"
+function generateDBProjectLinks() {
+  const db_projectMenu = document.getElementById("db-project-menu");
+  db_projects.forEach(project => {
+    if (!currentURL.includes(project.url)) {
+      const db_link = document.createElement("a");
+      const icon = document.createElement("i");
+      const projectName = document.createTextNode(" " + project.name);
+      icon.classList.add("bi", "bi-graph-up");
+      db_link.href = project.url;
+      db_link.appendChild(icon);
+      db_link.appendChild(projectName);
+      db_projectMenu.appendChild(db_link);
+    }
+  });
+}
+}
+if (document.getElementById("j-project-menu"))  {
+  generateJProjectLinks();}
+else if (document.getElementById("db-project-menu"))  {
+  generateDBProjectLinks();
+}
+
+
+
+
+

@@ -158,6 +158,124 @@ h6 {
   background: #2cbc85;
 }
 /*--------------------------------------------------------------
+# Menu Container
+--------------------------------------------------------------*/
+.buttons-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons-container a {
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin: 0 3%;
+}
+
+.button {
+  display: inline-block;
+  background-color: #0f337b;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  border-color: #0deb14;
+  border-style: solid;
+  border-width: 2px;
+  width: 115px;
+}
+
+.button_menu {
+  display: inline-block;
+  background-color: #0f337b;
+  border-radius: 4px;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  border-color: #0deb14;
+  border-style: solid;
+  border-width: 2px;
+  width: 90px;
+}
+
+.menu-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 0%;
+  width: fit-content;
+}
+
+.menu-container .dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: calc(100% + 10px);
+  background-color: rgba(5, 5, 5, 0.548);
+  border-radius: 4px;
+  padding: 5px 5px;
+  /* Ajusta el espaciado vertical aquí */
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-color: #0deb14;
+  border-style: solid;
+  border-width: 2px;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 4px;
+  max-width: 900px;
+  /* width: 600px; */
+}
+
+.menu-container .dropdown-menu li {
+  padding: 10px 0;
+  margin: 0;
+  /* min-width: 900px; */ 
+}
+
+.menu-container .dropdown-menu a {
+  padding: 10px 10px;
+  font-size: 15px;
+  text-transform: none;
+  line-height: 3.5;
+  display: block;
+  width: 100%;
+  /* Display as block elements */
+  /* margin: 0 !important; */
+}
+
+.menu-container .dropdown-menu a i {
+  font-size: 15px;
+}
+
+.button_menu:hover+.menu-container .dropdown-menu {
+  position: relative;
+}
+
+.menu-container:hover .dropdown-menu {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+  position: relative;
+  margin: 0;
+  transition: opacity 1.5s ease-in-out, top 1.2s ease-in-out;
+}
+/*--------------------------------------------------------------
 # Presentation
 --------------------------------------------------------------*/
 .presentation {
@@ -593,7 +711,7 @@ h6 {
     inset: 0;
     padding: 50px 0 10px 0;
     margin: 0;
-    background: rgba(13, 0, 26, 0.9);
+    background: rgba(11, 0, 26, 0.9);
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -1340,7 +1458,6 @@ h6 {
   color: #fff;
   padding: 140px 0 60px 0;
   min-height: 30vh; /* Color de fondo de respaldo */
-  background-image: url('JAMT-Portfolio//assets//img//gallery//Covers//cover.jpg'); /* Ruta a tu imagen de fondo */
   background-size: cover;   
 }
 
