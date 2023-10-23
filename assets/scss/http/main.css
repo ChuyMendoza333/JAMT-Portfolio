@@ -315,6 +315,18 @@ h6 {
 .presentation-links a:hover {
   text-decoration: underline;
 }
+.credits {
+  margin: 0 0 0 0 !important;
+}
+
+.credits a {
+  color: #42af10 !important;
+}
+
+.credits a:hover {
+  background-color: #007acc !important;
+  color: #fff !important;
+}
 
 /*--------------------------------------------------------------
 # Scroll top button
